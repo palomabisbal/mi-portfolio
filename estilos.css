@@ -1,0 +1,242 @@
+/*Cabecera de la página*/
+header{
+    background-color: #FFF9F1;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 40px;
+}
+/*Logo y menú en la misma línea*/
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Tamaño del logo*/
+.cabecera img {
+    width: 120px;
+    height: auto;
+}
+/*Menú de navegación*/
+nav {
+    display: flex;
+    gap: 30px;
+}
+/*Enlaces del menú*/
+nav a { 
+    color: #9D503B;
+    text-decoration: none;
+    font-size: 20px;
+}
+/*Efecto al pasar el ratón*/
+nav a:hover {
+    color: #C98B70;
+}
+/*Portada principal*/
+.portada {
+    max-width: 1200px;
+    margin: 33px auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+/*Texto de la portada*/
+.contenido-portada {
+    flex: 3;
+    min-width: 0;
+}
+/*Imagen decorativa*/
+.imagen-portada {
+    flex: 0 1 450px;
+    min-width: 0;
+    transform: translateX(-128px);
+}
+.imagen-portada img {
+    display: block;
+    max-width: 700px;
+    height: auto;
+    margin-right: 50px;
+}
+/*Texto pequeño de bienvenida*/
+.saludo {
+    color: #B96549;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+/*Título principal*/
+.portada h1 {
+    color: #49372F;
+    font-size: 56px;
+    margin-bottom: 15px;
+}
+/*Subtítulo*/
+.portada h2 {
+    color: #B96549;
+    font-size: 26px;
+    font-weight: normal;
+}
+/*Descripción*/
+.portada p {
+    color: #6F625A;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 650px;
+}
+/*Botón*/
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 24px;
+    background-color: #B96549;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 6px;
+}
+/*Efecto del botón*/
+.boton:hover {
+    background-color: #9D503B;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 768px) {
+    .portada {
+        flex-direction: column;
+        padding: 0 20px;
+        margin: 40px auto;
+    }
+
+    .portada h1 {
+        font-size: 40px;
+    }
+}
+/*Pie de página*/
+footer{
+    background-color: #49372F;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 30px;
+}
+.pie-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+/*Tamaño del GuitHub*/
+.redes-sociales img {
+    width: 25px;
+    height: auto;
+}
+footer p {
+    color: #FFF9F1;
+}
+body {
+    margin: 0;
+}
+/*Página sobre mí*/
+.sobre-mi {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+/*Columna de texto*/
+.contenido-sobre-mi {
+    flex: 1;
+    min-width: 0;
+}
+/* Etiqueta superior */
+.contenido-sobre-mi .etiqueta-seccion {
+    color: #B96549;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+/* Título principal */
+.contenido-sobre-mi h1 {
+    color: #49372F;
+    font-size: 48px;
+    margin: 0 0 25px;
+}
+/* Texto de la biografía */
+.contenido-sobre-mi p:not(.etiqueta-seccion) {
+    color: #6F625A;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+/* Contenedor de la foto */
+.imagen-sobre-mi {
+    flex: 0 1 420px;
+    width: 100%;
+    max-width: 420px;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 12px 12px 0 #F0D9C9;
+}
+/* Imagen recortada */
+.imagen-sobre-mi img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 10%;
+}
+/* Adaptación a móviles */
+@media (max-width: 768px) {
+    .sobre-mi {
+        flex-direction: column;
+        gap: 35px;
+        padding: 30px 20px;
+        margin: 20px auto;
+    }
+
+    .contenido-sobre-mi h1 {
+        font-size: 38px;
+    }
+
+    .imagen-sobre-mi {
+        flex: none;
+        width: 100%;
+        max-width: 420px;
+        height: 430px;
+    }
+}
+/*Página contacto*/
+.contacto {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+/*Columna de texto*/
+.contenido-contacto {
+    flex: 1;
+    min-width: 0;
+}
+/* Etiqueta superior */
+.contenido-contacto .etiqueta-seccion {
+    color: #B96549;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+/* Título principal */
+.contenido-contacto h1 {
+    color: #49372F;
+    font-size: 48px;
+    margin: 0 0 25px;
+}
+/* Texto de la biografía */
+.contenido-contacto p:not(.etiqueta-seccion) {
+    color: #6F625A;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
